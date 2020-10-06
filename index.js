@@ -16,8 +16,7 @@ const server = http.createServer((request, response) => {
       bodyObject: bodyObject ? JSON.parse(bodyObject) : {}
     };
 
-      response.end(JSON.stringify(reqObject));
-    });
+    response.end(JSON.stringify(reqObject));
   });
 });
 
